@@ -12,7 +12,7 @@
     background-clip: border-box; */
     width: 100%;
     height: 33vh;
-    margin-top: 2.75rem;
+    margin-top: 3.5rem;
     /* border: 5px dashed red; */
     position: relative;
 }
@@ -194,9 +194,6 @@
         background-position: 50% 25%;
     }
 
-    #product-overview h1{
-    font-size: 4.5rem;
-}
 }
 
 @media (min-width: 768px) and (max-width:959px) {
@@ -206,9 +203,6 @@
         background-position: 50% 25%;
     }
 
-    #product-overview h1{
-    font-size: 3rem;
-    }
     .key-feature {
         display: inline-block;
         width: 32%;
