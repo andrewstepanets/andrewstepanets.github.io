@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #ededed;
+}
+
+.main__container {
+    position: relative;
+    background: #fff;
+    top:6rem;
+    padding: 0 1.8rem 1.8rem 1.8rem;
+}
+.profile__img {
+    width: 10rem;
+    display: block;
+    margin: 0 auto -5rem;
+    position: relative;
+    top: -5rem;
+}
+.line {
+    max-width: 100%;    
+}
+header h1 {
+    margin: 0;
+    padding: 1.3rem 0 0 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+header h1 strong, h2 {
+    color: #3b5a76;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.3rem;
+}
+.contact__list {
+    margin: 0;
+    padding: 0;
+}
+.contact__list li {
+    list-style: none;
+    font-weight: 700;
+    line-height: 4rem;
+}
+.contact__list li i {
+    vertical-align: middle;
+    color: #8e8e8e;
+    padding-right: 1rem;
+}
+
+/* .recent__projects__name {
+    margin: 2rem auto;
+} */
+
+.projects {
+    margin: 2.5rem auto;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.layouts_template {
+    border: 1px solid #8e8e8e;
+    border-radius: .3rem;
+}
+.layouts_template img {
+    width: 100%;
+}
+/* Hover Image effect */
+
+.img__hover {
+    overflow: hidden;
+}
+
+.img__hover img {
+    transition: transform .5s, filter .5s ease-in-out;
+    filter: brightness(100%);
+}
+
+.img__hover:hover img {
+    filter: brightness(90%);
+    transform: scale(1.1);
+}
