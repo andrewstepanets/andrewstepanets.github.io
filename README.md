@@ -1,2 +1,2 @@
 # examplesOfSites
-There are examples of sites who I created for my portfolio
+There are samples of sites who I created for my portfolio
