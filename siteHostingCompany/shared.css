@@ -32,12 +32,15 @@ main {
     background: #2ddf5c;
     padding: 8px 16px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.main-header > div{
+/* .main-header > div{
     display: inline-block;
-    vertical-align: middle; /*  для выравнивания элементов в header  */
-}
+    vertical-align: middle;   для выравнивания элементов в header, уже не используется, т.к. используем flex 
+} */
 
 .toggle-button {
     display: none;
@@ -67,31 +70,33 @@ main {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    height: 2.5rem;
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block;
+    vertical-align: middle;  using flexbox*/
 }
 
 .main-header__brand img {
-    height: 100%;
+   height: 2.5rem;
+   vertical-align: middle;
 }
 
 
 .main-nav {
-    display: inline-block;
+    /* display: inline-block;
     text-align: right;
     width: calc(100% - 122px);
-    vertical-align: middle; /*  для выравнивания элементов в header  */
+    vertical-align: middle;  для выравнивания элементов в header  */
+    display: flex;
 }
 
 .main-nav__items {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .main-nav__item {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0 1rem;
 }
 
@@ -101,6 +106,11 @@ main {
     color: #0e4f1f;
     font-weight: bold;
     padding: .2rem 0;
+}
+
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active {
+    border-bottom: 5px solid #0e4f1f;
 }
 
 .main-nav__item a:hover,
@@ -196,9 +206,12 @@ main {
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile-nav__item {
