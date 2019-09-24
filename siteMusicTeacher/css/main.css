@@ -1,5 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Spicy+Rice&display=swap&subset=cyrillic');
+@import 'normalize.css';
 
+body {
+    font-family: Roboto, serif;
+    font-size: 16px;
+}
+.main-header {
+    width: 100%;
+    height: 700px;
+    background: url(../img/piano-back.jpg) left 10% top 50%/cover no-repeat;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
 .main-nav__items {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main-nav__items a {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav__items a:hover,
+.main-nav__items a:active {
+    color: #efcf4f;
+    border-bottom: 2px solid #efcf4f;
+}
+.main-message {
+    font-family: Spicy Rice;
+    text-align: center;
+}
+.main-message h1 {
+    color: white;
+    font-size: 6rem;
+}
+.main-message h2 {
+    color: #efcf4f;
+    font-size: 3rem;
 }
