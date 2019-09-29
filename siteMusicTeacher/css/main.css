@@ -10,6 +10,9 @@ body {
     height: 700px;
     background: url(../img/piano-back.jpg) left 10% top 50%/cover no-repeat;
     padding: 1rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
     
 }
 .main__nav {
@@ -47,11 +50,13 @@ body {
     font-family: Spicy Rice;
     text-align: center;
 }
-.main-message h1 {
+.main-message h2 {
     color: white;
     font-size: 6rem;
+     line-height: .3rem;
 }
-.main-message h2 {
+.main-message h1 {
     color: #efcf4f;
     font-size: 3rem;
+    line-height: .5rem;
 }
