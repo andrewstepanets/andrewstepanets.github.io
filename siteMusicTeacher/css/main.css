@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Spicy+Rice&display=swap&subset=cyrillic');
 @import 'normalize.css';
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Roboto, serif;
     font-size: 16px;
@@ -53,10 +57,22 @@ body {
 .main-message h2 {
     color: white;
     font-size: 6rem;
-     line-height: .3rem;
+    font-weight: 400;
+    line-height: .3rem;
+    -webkit-transform: translateY(0px) scale(1);
+    -ms-transform: translateY(0px) scale(1);
+    transform: translateY(0px) scale(1); 
+    opacity: 1; 
+    transition: all 0.5s ease 0s; 
 }
 .main-message h1 {
     color: #efcf4f;
+    font-family: Roboto, serif;
     font-size: 3rem;
     line-height: .5rem;
+    -webkit-transform: translateY(0px) scale(1); 
+    -ms-transform: translateY(0px) scale(1);
+    transform: translateY(0px) scale(1);
+    opacity: 1; 
+    transition: all 0.5s ease 0s;
 }
