@@ -6,29 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teacher of Music from New Jersey</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/zoomslider.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-    <div class="main__nav">
-        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Logo"></a></div>
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="#">Home</a></li>
-                <li class="main-nav__item"><a href="#">About Me</a></li>
-                <li class="main-nav__item"><a href="#">Gallery</a></li>
-                <li class="main-nav__item"><a href="#">Lessons</a></li>
-                <li class="main-nav__item"><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-    </div>
-    <header class="main-header">
-        <div class="slideshow">
-        </div>
-        <div class="main-message">
+    <header class="main-header" data-zs-src='["img/piano-back-01.jpg", "img/piano-back-02.jpg", "img/piano-back-03.jpg", "img/piano-back-04.jpg", "img/piano-back-05.jpg"]' data-zs-overlay="plain">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__items">
+                    <li class="header-nav__item"><a href="#">Home</a></li>
+                    <li class="header-nav__item"><a href="#">About Me</a></li>
+                    <li class="header-nav__item"><a href="#">Gallery</a></li>
+                    <li class="header-nav__item"><a href="#">Lessons</a></li>
+                    <li class="header-nav__item"><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-message">
                 <h1>Playing piano</h1>
                 <h2>Realy Easy</h2>
-        </div>
-        
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit pharetra ipsum vel bibendum. In commodo lacus
+                    eu rutrum dictum. Etiam non varius nunc.
+                </p>
+            </div>
+            <div class="header-button">
+                <a href="#" class="button">Read more</a>
+            </div>
     </header>
-    
+    <section class="lesson-free">
+        <div class="opening-offer-text">
+            <p><span>Opening Offer</span>
+            </p>
+            <h1 class="title-lesson-free">get a free lesson</h1>
+            <p>
+                Bring your children to a trial lesson to find out how much they enjoy doing music or singing
+            </p>
+        </div>
+        <div class="lesson-free-button">
+            <a href="#" class="button">get started</a>
+        </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.zoomslider.js"></script>
 </body>
 </html>
