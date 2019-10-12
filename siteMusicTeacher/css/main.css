@@ -34,8 +34,10 @@ body {
 }
 .header-nav__items {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+    display: flex;
+    justify-content: space-around;
+    /* display: grid;
+    grid-template-columns: repeat(5, auto); */
 }
 
 .header-nav__items a {
@@ -121,7 +123,8 @@ body {
     width: 100%;
     height: 30rem;
     margin-top: -10rem;
-    padding: 3rem 3rem;
+    margin-bottom: 5rem;
+    padding: 3rem 4rem;
     background: #efcf4f url('../img/notes.png') center top 50%/95% repeat-y;
     z-index: 2;
     text-align: center;
@@ -150,4 +153,45 @@ body {
 }
 .lesson-free-button a {
     background: rgb(12, 75, 101);
+}
+.about {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: url('../img/about-back.jpg') center center/cover no-repeat;
+    display: grid;
+    grid-template-columns:1rem 6fr 5fr 1rem; 
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-column-gap: 6rem;
+    grid-template-areas: 
+        '. . . .' 
+        '. about__info about__img .'
+        '. . . .';
+}
+.about__info {
+    grid-area: about__info;
+}
+.about__info h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+.about__info h2 {
+    font-size: 1.5rem;
+    color: rgb(239, 207, 79);
+    font-weight: bold;
+}
+.about__info p {
+    color: white;    
+}
+.about__img {
+    grid-area: about__img;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.about__img img {
+    width: 80%;
+    border-radius: 1rem;
+    justify-self: center;
+    box-shadow: 30px 30px 0px 0px rgba(239, 207, 79, 1);
 }
