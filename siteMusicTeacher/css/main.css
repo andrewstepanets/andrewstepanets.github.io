@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Spicy+Rice&display=swap&subset=cyrillic');
 @import 'normalize.css';
+@import 'all.min.css';
 
 * {
     box-sizing: border-box;
@@ -8,6 +9,7 @@
 body {
     font-family: Roboto, serif;
     font-size: 16px;
+    background-color: rgb(247, 245, 239);
 }
 .main-header {
     width: 100%;
@@ -111,6 +113,8 @@ body {
     background: white;
 }
 
+/* ************ section Lesson Free  ************ */
+
 .lesson-free{
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
@@ -154,18 +158,54 @@ body {
 .lesson-free-button a {
     background: rgb(12, 75, 101);
 }
+
+/* ************ End of section Lesson Free  ************ */
+
+/* ************ Section Classes  ************ */
+
+.classes {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 2fr 6fr;
+    grid-template-areas: 'classes-title classes-title classes-title'
+                         'class-item__1 class-item__2 class-item__3';
+    margin-bottom: 3rem;
+}
+.classes-title {
+    grid-area: classes-title;
+    justify-self: center;
+    text-align: center;
+    color: rgb(12, 75, 101);
+}
+.classes-title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.class-item__1 {
+    grid-area: class-item__1;
+}
+.class-item__2 {
+    grid-area: class-item__2;
+}
+.class-item__3 {
+    grid-area: class-item__3;
+}
+.class-item img {
+    width: 50%;
+}
+
+/* ************ End of Section Classes  ************ */
+
+/* ************ section About Me  ************ */
+
 .about {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     background: url('../img/about-back.jpg') center center/cover no-repeat;
     display: grid;
-    grid-template-columns:1rem 6fr 5fr 1rem; 
-    grid-template-rows: 1fr 6fr 1fr;
-    grid-column-gap: 6rem;
-    grid-template-areas: 
-        '. . . .' 
-        '. about__info about__img .'
-        '. . . .';
+    grid-template-columns:5fr 7fr; 
+    /* grid-template-rows: 6rem 6fr 6rem; */
+    grid-template-areas:  
+        'about__info about__img';
+    padding: 6rem 3rem;
 }
 .about__info {
     grid-area: about__info;
@@ -185,13 +225,12 @@ body {
 }
 .about__img {
     grid-area: about__img;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+    text-align: center;
 }
 .about__img img {
     width: 80%;
     border-radius: 1rem;
-    justify-self: center;
-    box-shadow: 30px 30px 0px 0px rgba(239, 207, 79, 1);
+    box-shadow: 2rem 2rem 0px 0px rgba(239, 207, 79, 1);
 }
+
+/* ************ End of section About Me  ************ */
