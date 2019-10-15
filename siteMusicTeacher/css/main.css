@@ -168,7 +168,7 @@ body {
 .classes {
     display: grid;
     grid-template-columns: .5fr 3fr 3fr 3fr .5fr;
-    grid-template-rows: 2fr 6fr;
+    grid-template-rows: 3fr 8fr;
     column-gap: 2rem;
     grid-template-areas: '. classes-title classes-title classes-title .'
                          '. class-item__1 class-item__2 class-item__3 .';
@@ -195,12 +195,67 @@ body {
 }
 .class-item {
     background: white;
+    color: rgb(12, 75, 101);
     border-radius: .5rem;
+    transition-property: box-shadow;
+    transition-duration: .4s;
+}
+.class-item:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
 }
 .class-item img {
     width: 100%;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
+}
+.class-item__descriptions {
+    padding: 0 2rem 2rem;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'name name'
+                        'duration cost'
+                        'register register';
+}
+.class-item__descriptions .class-item__name {
+    grid-area: name;
+}
+.class-item__descriptions .class-item__duration {
+    grid-area: duration;
+}
+.class-item__descriptions .class-item__cost {
+    grid-area: cost;
+}
+.class-item__descriptions .class-item__register {
+    grid-area: register;
+    text-align: center;
+}
+.class-item__descriptions .class-item__name h2 {
+    text-align: center;
+}
+.class-item__descriptions .class-item__name h2 span {
+    color: rgb(194, 89, 52);
+}
+.class-item__descriptions .class-item__duration p i,
+.class-item__descriptions .class-item__cost p i {
+    color: rgb(194, 89, 52);
+    padding-right: .4rem;
+}
+.class-item__descriptions .class-item__register a {
+    color: white;
+    display:block;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    text-decoration: none;
+    background: #efcf4f;
+    transition-property: background;
+    transition-duration: .4s;
+}
+.class-item__descriptions .class-item__register a:hover {
+    background: rgb(12, 75, 101);
 }
 
 /* ************ End of Section Classes  ************ */
