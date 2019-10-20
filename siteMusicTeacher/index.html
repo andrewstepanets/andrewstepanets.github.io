@@ -19,12 +19,32 @@
             <nav class="header-nav">
                 <ul class="header-nav__items">
                     <li class="header-nav__item"><a href="#">Home</a></li>
-                    <li class="header-nav__item"><a href="#">Classes</a></li>
+                    <li class="header-nav__item"><a href="#classes">Classes</a></li>
                     <li class="header-nav__item"><a href="#">About Me</a></li>
                     <li class="header-nav__item"><a href="#">Media</a></li>
                     <li class="header-nav__item"><a href="#">Contacts</a></li>
                 </ul>
             </nav>
+            <menu>
+                <label for="trigger">
+                    <input id="trigger" type="checkbox" />
+                    <section class="drawer-list">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#classes">Classes</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </section>
+                    <hamburger> <i></i>
+                        <text>
+                            <close>close</close>
+                            <open>menu</open>
+                        </text>
+                    </hamburger>
+                </label>
+            </menu>
             <div class="header-message">
                 <h1>Playing piano</h1>
                 <h2>Realy Easy</h2>
@@ -33,7 +53,7 @@
                 <a href="#" class="button">Read more</a>
             </div>
     </header>
-    <section class="lesson-free">
+    <section class="lesson-free" id="lesson-free">
         <div class="opening-offer-text">
             <h2 class="subtitle-lesson-free">Opening Offer</h2>
             <h1 class="title-lesson-free">get a free lesson</h1>
@@ -45,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="classes">
+    <section class="classes" id="classes">
         <div class="classes-title">
             <h1>Most Popular Classes</h1>
             <p>Pellentesque mattis mauris ac tortor volutpat, eu fermentum sapien euismod. In id tempus metus. Donec eu volutpat nibh,
