@@ -306,10 +306,15 @@ menu {
 
 .media {
     background: url('../img/circles.png') no-repeat;
-    height: 300px;
 }
 .media__content {
     background: url('../img/backgrond_video.png') no-repeat;
+    width: 80%;
+    margin: 0px auto;
+}
+.media .media__content img {
+    width: 100%;
+    border-radius: 1rem;
 }
 
 /* ************ End of section Media  ************ */
