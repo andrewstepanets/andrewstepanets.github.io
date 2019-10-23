@@ -302,6 +302,18 @@ menu {
 
 /* ************ End of section About Me  ************ */
 
+/* ************ Section Media  ************ */
+
+.media {
+    background: url('../img/circles.png') no-repeat;
+    height: 300px;
+}
+.media__content {
+    background: url('../img/backgrond_video.png') no-repeat;
+}
+
+/* ************ End of section Media  ************ */
+
 /* ********************** Mobile & Tablet ********************** */
 
 @media (max-width: 1080px){
