@@ -28,14 +28,14 @@ body {
     align-items: center;
 }
 .header-logo {
-    padding: 1rem;
+    padding: 2rem;
     grid-area: header-logo;
-    background: url(../img/logo.png) left 0% top 2% no-repeat;
+    background: url(../img/logo.png) center no-repeat;
 }
 .header-logo button {
     opacity: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 3rem;
     cursor: pointer;
 }
 .header-nav {
@@ -350,7 +350,7 @@ menu {
     }
     .header-logo {
     grid-area: header-logo;
-    background: url(../img/logo-min-res.png) left bottom no-repeat;
+    background: url(../img/logo-min-res.png) left 5% center no-repeat;
     }
     /* ********** Burger Menu styles ************ */
 
@@ -401,6 +401,10 @@ menu {
                 }
 
             menu input[type=checkbox]:checked ~ hamburger open {
+                color: transparent;
+                width: 0;
+                }
+            menu input[type=checkbox]:checked ~ hamburger:before {
                 color: transparent;
                 width: 0;
                 }
@@ -464,10 +468,22 @@ menu {
                     menu hamburger {
                     position: fixed;
                     display: block;
-                    top: 0px;
-                    right: 5px;
+                    top: 1.2rem;
+                    right: 2rem;
                     height: 50px;
                     width: 50px;
+                    }
+                    menu hamburger:before {
+                        position: fixed;
+                        display: block;
+                        top: 1.1rem;
+                        right: 1.4rem;
+                        height: 4.5rem;
+                        width: 4.5rem;
+                        content: "";
+                        background: #efcf4f;
+                        opacity: .8;
+                        border-radius: .3rem;
                     }
 
                     menu hamburger:hover { cursor: pointer; }
