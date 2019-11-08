@@ -148,8 +148,8 @@ menu {
 }
 .opening-offer-text p {
     color: rgb(12, 75, 101);
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 .subtitle-lesson-free {
     color: rgb(194, 89, 52);
@@ -190,7 +190,7 @@ menu {
     text-align: center;
     color: rgb(12, 75, 101);
 }
-.classes-title h1 {
+.classes-title h2 {
     font-size: 3rem;
     font-weight: 900;
 }
@@ -284,15 +284,15 @@ menu {
 .about__info {
     grid-area: about__info;
 }
-.about__info h1 {
+.about__info h2 {
     font-size: 3rem;
     color: white;
     font-weight: bold;
 }
-.about__info h2 {
-    font-size: 1.5rem;
+.about__info p.about-me {
+    font-size: 1.2rem;
     color: rgb(239, 207, 79);
-    font-weight: bold;
+    font-weight: 600;
 }
 .about__info p {
     color: white;    
