@@ -1,0 +1,16 @@
+.footer {
+    border-top: 5px solid #eadb6c;
+    .row-copy {
+        background: #f19d3d;
+        .copy {
+            color: white;
+        }
+    }
+}
+.footer a, .footer-info {
+    display: block;
+    width: 70%;
+    img {
+        width: 100%;
+    }
+}
