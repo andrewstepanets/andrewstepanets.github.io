@@ -1,0 +1,39 @@
+.banner__wrap {
+  background: url(../img/banner__bg.jpg) center top repeat; }
+  .banner__wrap .row {
+    margin-right: 20px;
+    margin-left: 20px; }
+
+.banner__iner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  flex-grow: 1; }
+  .banner__iner .figure {
+    margin: 0;
+    margin-bottom: -30px; }
+    .banner__iner .figure img {
+      border: 10px solid #f7f5e2; }
+  .banner__iner .figure-caption {
+    background: url("../img/banner__bg-white.svg") center top no-repeat;
+    padding: 80px 25px 0px 25px;
+    text-align: center;
+    flex-basis: 250px; }
+    .banner__iner .figure-caption a {
+      color: #48443e; }
+    .banner__iner .figure-caption .caption-header {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 2rem;
+      color: #3ab7cd; }
+
+.banner__iner:hover a {
+  text-decoration: none; }
+.banner__iner:hover img {
+  border-color: #e86a46; }
+.banner__iner:hover .caption-header {
+  color: #e86a46; }
+
+/*# sourceMappingURL=banner.css.map */

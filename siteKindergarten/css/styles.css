@@ -159,7 +159,7 @@ header {
     .info__wrap .info-link-red:hover {
       color: #e66939;
       text-decoration: none;
-      transition: all .3s; }
+      transition: all 0.3s; }
   .info__wrap .cta {
     display: flex;
     flex-flow: column;
@@ -181,7 +181,7 @@ header {
       text-align: center; }
     .info__wrap .info-plan .plan-header {
       font-size: 1.5rem;
-      padding: .6rem 0;
+      padding: 0.6rem 0;
       font-weight: bold; }
   .info__wrap .info-plan-red {
     border-top: 6px solid #e66939; }
@@ -231,21 +231,35 @@ header {
     .info__wrap .plan-footer .plan-red-link:hover {
       color: #e66939;
       text-decoration: none;
-      transition: all .3s; }
+      transition: all 0.3s; }
     .info__wrap .plan-footer .plan-green-link:hover {
       color: #65a754;
       text-decoration: none;
-      transition: all .3s; }
+      transition: all 0.3s; }
     .info__wrap .plan-footer .plan-blue-link:hover {
       color: #47c4d1;
       text-decoration: none;
-      transition: all .3s; }
+      transition: all 0.3s; }
   .info__wrap .border-top-none {
     border-top: none; }
   .info__wrap .underline {
     border-bottom: 1px solid #e6e4c3;
     padding-top: 14px;
     padding-bottom: 14px; }
+
+.circle {
+  border-radius: 50%;
+  padding: 0.4rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 0.5rem; }
+
+.blue-circle {
+  background: #47c4d1; }
+
+.red-circle {
+  background: #e66939; }
 
 .footer {
   border-top: 5px solid #eadb6c; }
